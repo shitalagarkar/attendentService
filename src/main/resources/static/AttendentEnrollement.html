@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    async function sendFile() {
+    alert("inside send file");
+       <!-- let formData = new FormData();
+    formData.append("data",selectedFile.files[0]);
+    const settings = {
+        method: 'POST',
+        body:formData
+        headers: {
+            'enctype' : 'multipart/form-data',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        }
+
+
+    };
+    alert(settings);
+
+    const fetchResponse = await fetch('http://localhost:8080/attendents/',settings);
+            console.log(fetchResponse); -->
+    }
+
+</script>
+<form >
+<input id="firstName" type="text" name="firstname"/>
+<input id="lastName" type="text" name="lastname"/>
+<input id="area" type="text" name="firstname"/>
+<input id="selectedFile" type = "file" name="selectFile"/>
+<button id="save" onclick="sendFile()">save</button>
+</form>
+
+</body>
+</html>
